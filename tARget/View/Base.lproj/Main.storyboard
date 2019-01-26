@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--GameVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameVC" customModule="tARget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBI-mp-Vne">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer: 1:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgV-KI-bXG">
+                                <rect key="frame" x="229" y="30" width="126" height="29.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlt-Ex-CKw">
+                                <rect key="frame" x="20" y="30" width="93.5" height="29.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dS1-Ep-D8y">
+                                <rect key="frame" x="110" y="60" width="156" height="567"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tARget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUq-Li-ETv">
+                                        <rect key="frame" x="16.5" y="0.0" width="123" height="283.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yai-NE-IfR">
+                                        <rect key="frame" x="0.0" y="283.5" width="156" height="283.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28l-iN-AKA">
+                                                <rect key="frame" x="12.5" y="0.0" width="131.5" height="71"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbp-mb-4hE">
+                                                <rect key="frame" x="45.5" y="71" width="65" height="71"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                <state key="normal" title="Start"/>
+                                                <connections>
+                                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VM-5V-VJE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d90-Q8-Gxg">
+                                                <rect key="frame" x="0.0" y="142" width="156" height="70.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <state key="normal" title="Leaderboards"/>
+                                                <connections>
+                                                    <action selector="callGC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6H-Fh-3m2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfT-9E-wvc">
+                                                <rect key="frame" x="12.5" y="212.5" width="131" height="71"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <state key="normal" title="Instructions"/>
+                                                <connections>
+                                                    <action selector="instructionMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Y4-wa-3sc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A7r-ii-0Qe">
+                                <rect key="frame" x="113" y="280" width="149" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSy-W3-vYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOM-wl-zFU">
+                                        <rect key="frame" x="23" y="47" width="103" height="59"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUe-2d-RMj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mesage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-ie-cks">
+                                <rect key="frame" x="117" y="310" width="142.5" height="47"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dS1-Ep-D8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="30i-r2-aMz"/>
+                            <constraint firstItem="Nlt-Ex-CKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9wY-xZ-otQ"/>
+                            <constraint firstItem="x4I-ie-cks" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GUJ-vU-ZoT"/>
+                            <constraint firstItem="Nlt-Ex-CKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="GkG-zx-dEx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fgV-KI-bXG" secondAttribute="trailing" constant="20" id="H76-9g-HGa"/>
+                            <constraint firstItem="pBI-mp-Vne" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HeO-ZR-cJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dS1-Ep-D8y" secondAttribute="bottom" constant="40" id="NEs-wU-KDG"/>
+                            <constraint firstItem="dS1-Ep-D8y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NM0-Xx-Er7"/>
+                            <constraint firstItem="x4I-ie-cks" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PDA-H2-z4R"/>
+                            <constraint firstItem="A7r-ii-0Qe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QxU-cs-M06"/>
+                            <constraint firstItem="pBI-mp-Vne" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TeQ-6j-hDq"/>
+                            <constraint firstItem="pBI-mp-Vne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aif-Qg-Vn7"/>
+                            <constraint firstItem="fgV-KI-bXG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cw2-5K-FGZ"/>
+                            <constraint firstItem="pBI-mp-Vne" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s2i-SC-NT3"/>
+                            <constraint firstItem="A7r-ii-0Qe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y2Z-wR-JD7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="finalScoreLbl" destination="lSy-W3-vYJ" id="LBa-b8-2LE"/>
+                        <outlet property="highScoreLbl" destination="28l-iN-AKA" id="Ape-zC-jun"/>
+                        <outlet property="instructionButton" destination="KfT-9E-wvc" id="n3Z-Md-S89"/>
+                        <outlet property="leaderboardButton" destination="d90-Q8-Gxg" id="Lnj-3H-af1"/>
+                        <outlet property="qualityLbl" destination="x4I-ie-cks" id="nan-mj-bVD"/>
+                        <outlet property="resetButton" destination="JOM-wl-zFU" id="XvQ-eA-m5C"/>
+                        <outlet property="sceneView" destination="pBI-mp-Vne" id="9SF-mG-rZm"/>
+                        <outlet property="scoreLbl" destination="Nlt-Ex-CKw" id="0L0-9G-T6L"/>
+                        <outlet property="startButton" destination="Bbp-mb-4hE" id="EwN-6N-8PM"/>
+                        <outlet property="timerLbl" destination="fgV-KI-bXG" id="r6T-9V-KHC"/>
+                        <outlet property="titleLbl" destination="HUq-Li-ETv" id="rP2-Wz-Ad8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

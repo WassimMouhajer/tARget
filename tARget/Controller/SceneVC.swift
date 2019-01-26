@@ -28,13 +28,15 @@ class SceneVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         qualityLbl.isHidden = true
-        timerLbl.isHidden = true
-        scoreLbl.isHidden = true
         resetBtn.isHidden = true
         finalScoreLbl.isHidden = true
         timerLbl.text = "Time: 1:00"
         targetSound = SCNAudioSource(fileNamed: "Blop.mp3")
         targetSound.load()
+        setUpAR()
+        updateUI()
+        addNode()
+        gameTimer()
     }
     
     func setUpAR() {
